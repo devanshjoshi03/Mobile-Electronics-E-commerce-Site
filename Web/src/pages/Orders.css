@@ -1,0 +1,166 @@
+.orders-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.orders-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.orders-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.orders-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.no-orders-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.no-orders p {
+  color: #666;
+  margin: 8px 0;
+}
+
+.no-orders-subtext {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.order-header {
+  padding: 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-header h3 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+
+.order-status {
+  background: #22c55e;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.order-details {
+  padding: 20px;
+}
+
+.order-info {
+  margin-bottom: 20px;
+}
+
+.order-date, .order-total {
+  margin: 8px 0;
+  color: #444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.amount {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.order-items {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.order-items h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.order-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-item-row:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  color: #444;
+}
+
+.item-price {
+  color: #666;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .orders-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .orders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-card {
+    margin-bottom: 20px;
+  }
+} 
